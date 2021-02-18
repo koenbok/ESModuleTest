@@ -1,0 +1,16 @@
+<html>
+  <head> </head>
+  <body>
+    Hello World.
+    <div id="root"></div>
+    <script type="module">
+      import * as bundle from "./dist/index.js";
+      import * as React from "https://esm.sh/react";
+      import * as ReactDOM from "https://esm.sh/react-dom";
+      ReactDOM.render(
+        React.createElement(bundle.Button, { title: "Design System Button" }),
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
